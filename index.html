@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bakucards — Rare & collectible trading cards." />
+    <meta name="theme-color" content="#0d0d0f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <title>Bakucards — Home</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-bar">
+            <a class="brand" href="#" aria-label="Bakucards home">
+                <span aria-hidden="true">🃏</span> <span class="brand__text">Bakucards</span>
+            </a>
+            <nav class="main-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#rare">Rare card</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="#" aria-label="Cart">🛒</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <h1 id="hero-title">Explore our featured cards</h1>
+                    <p>Hand-picked collectibles with verified rarity and pristine condition.</p>
+                    <p><a class="btn" href="#shop">Browse shop</a></p>
+                </div>
+                <figure class="hero__media">
+                    <img src="img/hero.jpg" alt="Selection of rare trading cards displayed on a table." loading="lazy"
+                        decoding="async">
+                    <figcaption class="visually-hidden">A selection of rare cards.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- RARE LISTING (GRID) -->
+        <section class="section" aria-labelledby="rare-title">
+            <div class="container">
+                <h2 id="rare-title">¡Descubre las cartas raras ahora!</h2>
+                <ul class="card-grid" role="list">
+                    <!-- item -->
+                    <li class="product-card">
+                        <article>
+                            <figure class="product-card__media">
+                                <img src="img/1.jpg" alt="Card: Crimson Wyvern" loading="lazy"
+                                    decoding="async">
+                                <figcaption class="visually-hidden">Crimson Wyvern</figcaption>
+                            </figure>
+                            <div class="product-card__body">
+                                <h3 class="product-card__title">Crimson Wyvern</h3>
+                                <p class="product-card__price">$129</p>
+                                <button class="btn btn--ghost">Ver</button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="product-card">
+                        <article>
+                            <figure class="product-card__media">
+                                <img src="img/2.jpg" alt="Card: Hydoryus" loading="lazy"
+                                    decoding="async">
+                                <figcaption class="visually-hidden">Hydoryus</figcaption>
+                            </figure>
+                            <div class="product-card__body">
+                                <h3 class="product-card__title">Hydoryus</h3>
+                                <p class="product-card__price">$199</p>
+                                <button class="btn btn--ghost">Ver</button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="product-card">
+                        <article>
+                            <figure class="product-card__media">
+                                <img src="img/3.jpg" alt="Card: Emerald Titan" loading="lazy"
+                                    decoding="async">
+                                <figcaption class="visually-hidden">Emerald Titan</figcaption>
+                            </figure>
+                            <div class="product-card__body">
+                                <h3 class="product-card__title">Emerald Titan</h3>
+                                <p class="product-card__price">$249</p>
+                                <button class="btn btn--ghost">Ver</button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="product-card">
+                        <article>
+                            <figure class="product-card__media">
+                                <img src="img/4.jpg" alt="Card: Shadow Phoenix" loading="lazy"
+                                    decoding="async">
+                                <figcaption class="visually-hidden">Shadow Phoenix</figcaption>
+                            </figure>
+                            <div class="product-card__body">
+                                <h3 class="product-card__title">Shadow Phoenix</h3>
+                                <p class="product-card__price">$179</p>
+                                <button class="btn btn--ghost">Ver</button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="product-card">
+                        <article>
+                            <figure class="product-card__media">
+                                <img src="img/4.jpg" alt="Card: Shadow Phoenix" loading="lazy"
+                                    decoding="async">
+                                <figcaption class="visually-hidden">Shadow Phoenix</figcaption>
+                            </figure>
+                            <div class="product-card__body">
+                                <h3 class="product-card__title">Shadow Phoenix</h3>
+                                <p class="product-card__price">$179</p>
+                                <button class="btn btn--ghost">Ver</button>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT PREVIEW -->
+        <section class="section section--muted" aria-labelledby="contact-preview-title">
+            <div class="container contact-preview">
+                <div>
+                    <h2 id="contact-preview-title">Contact us</h2>
+                    <form class="form" onsubmit="event.preventDefault();" aria-describedby="contact-help">
+                        <div class="form__row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="form__row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="form__row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <p id="contact-help" class="form__help">We usually reply within 24–48 hours.</p>
+                        <button class="btn" type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <figure class="map">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <h2>Ubicación de la tienda</h2>
+                        <small>Haz clic para ver el mapa completo</small>
+                    </div>
+                    <figcaption class="visually-hidden">Mapa de ubicación de la tienda</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer__content">
+            <div class="footer__row">
+                <nav class="footer-nav" aria-label="Footer">
+                    <ul class="footer-links" role="list">
+                        <li><a href="#">Social Networks</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms And Conditions</a></li>
+                    </ul>
+                </nav>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

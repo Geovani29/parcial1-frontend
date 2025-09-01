@@ -1,0 +1,98 @@
+
+.site-header {
+    background: rgba(13, 15, 20, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.site-header:hover {
+    border-bottom-color: var(--border-hover);
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.brand {
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.brand__text {
+    letter-spacing: .3px;
+}
+
+
+.main-nav .nav-list {
+    display: flex;
+    gap: var(--space-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-soft);
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav a,
+.main-nav a::before {
+    transition: var(--transition);
+}
+
+.main-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--brand);
+    transform: translateX(-50%);
+}
+
+.main-nav a:hover::before {
+    width: 100%;
+}
+
+.main-nav a[aria-current="page"] {
+    color: var(--brand);
+    background: var(--brand-soft);
+}
+
+.main-nav a:hover {
+    color: var(--text);
+    background: var(--card);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 720px) {
+    .header-bar {
+        flex-wrap: wrap;
+        gap: .6rem;
+    }
+
+    .main-nav .nav-list {
+        flex-wrap: wrap;
+    }
+}

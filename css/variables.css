@@ -1,0 +1,55 @@
+:root {
+    /* Colors */
+    --bg: #0d0e12;
+    --bg-soft: #12141c;
+    --card: #161922;
+    --text: #ffffff;
+    --text-soft: #e1e3e8;
+    --muted: #a3a8b8;
+    --brand: #8c6dff;
+    --brand-soft: rgba(140, 109, 255, 0.1);
+    --brand-600: #7c5cff;
+    --brand-hover: #9f85ff;
+    --success: #4caf50;
+    --warning: #ff9800;
+    --error: #f44336;
+
+    /* Border Colors */
+    --border: rgba(255, 255, 255, 0.1);
+    --border-hover: rgba(255, 255, 255, 0.2);
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    /* Border Radius */
+    --radius: 16px;
+    --radius-sm: 8px;
+    --radius-lg: 24px;
+
+    /* Shadows */
+    --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+    /* Animations */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+    /* Typography */
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+
+    /* Layout */
+    --header-height: 4rem;
+    --container-max-width: 1200px;
+    --grid-gap: 1.5rem;
+}
